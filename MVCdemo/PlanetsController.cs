@@ -46,7 +46,7 @@ namespace MVCdemo
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "PlanetID,Name,Population")] Planet planet)
+        public ActionResult Create([Bind(Include = "PlanetID,Name,Population,Faction")] Planet planet)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace MVCdemo
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "PlanetID,Name,Population")] Planet planet)
+        public ActionResult Edit([Bind(Include = "PlanetID,Name,Population,Faction")] Planet planet)
         {
             if (ModelState.IsValid)
             {
