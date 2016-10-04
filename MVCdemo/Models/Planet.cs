@@ -24,7 +24,7 @@ namespace MVCdemo.Models
             Database.SetInitializer(new MyInitializer());
         }
 
-        public class MyInitializer :DropCreateDatabaseIfModelChanges<PlanetContext>
+        public class MyInitializer : DropCreateDatabaseIfModelChanges<PlanetContext>
         {
             protected override void Seed(PlanetContext context)
             {
