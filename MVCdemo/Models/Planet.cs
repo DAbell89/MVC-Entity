@@ -20,6 +20,7 @@ namespace MVCdemo.Models
 
         public PlanetContext()
         {
+            //Database.SetInitializer(new CreateDatabaseIfNotExists<PlanetContext>());
             //Drops and Creates a New DataBase when Changes are made to model
             Database.SetInitializer(new MyInitializer());
         }
